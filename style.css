@@ -21,8 +21,14 @@ p {
 }
 
 .block {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    border-bottom: dashed 3px #CCC;
+    padding-bottom: 35px;
 }
+
+    .block:last-child {
+        border-bottom: none;
+    }
 
 .testimonial {
     position: relative;
@@ -43,7 +49,7 @@ p {
 
     .quote q {
         display: block;
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-bottom: 10px;
         font-style: italic;
     }
@@ -66,12 +72,37 @@ p {
         margin: 0 auto;
     }
 
+    #donate .donateButton {
+        background: rgba(0,0,0,0.3);
+    }
+
+    #donate .donateButton:hover {
+        background: rgba(0,0,0,0.1);
+    }
+
 .graph {
-    width: 100%;
-    height: 300px;
+    display: inline-block;
+    width: 667px;
+    height: 371px;
     background: #EEE;
 }
 
 .donateButton {
+    display: inline-block;
+    padding: 15px 15px;
+    background: #F16623;
+    color: white;
+    text-decoration: none;
+}
 
+.donateButton:hover {
+    background: #d1591d;
+}
+
+.actionCall {
+    width: 280px;
+    height: 371px;
+    float: right;
+    text-align: center;
+    padding-top: 150px;
 }
