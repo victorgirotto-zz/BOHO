@@ -24,42 +24,66 @@
                 <h2>What is BOHO's impact?</h2>
                 <p>Last year, BOHO had 3,278 guests, who used the service 22 times on average. 1842 of those guests did not use any service other than BOHO. As of May 1, BOHO has had to close its doors due to a lack of funding.</p>
                 <div class="graph">
-                    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1EtMMnygviqm1HHFNJnGffWXgucBd8Q2RBRuePC0URUE/pubchart?oid=1631882819&amp;format=interactive"></iframe>
+                    <iframe width="600" height="391" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1EtMMnygviqm1HHFNJnGffWXgucBd8Q2RBRuePC0URUE/pubchart?oid=1631882819&amp;format=interactive"></iframe>
                 </div>
 
                 <!--<div class="actionCall">
                     <a href="#donateHeader" class="donateButton">Keep BOHO going!</a>
                     <p>$5 per month or as much as you want to share</p>
                 </div>-->
-                <div class="actionCall">
+                <form class="actionCall" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <h2 id="donateHeader">Donate</h2>
                     
                     <ul>
                         <li>
-                            <input type="radio" name="donation" value="5" id="donate5"> 
+                            <input type="radio" name="amount" value="5.00" id="donate5" checked> 
                             <label for="donate5"><strong>$5</strong> -- houses one guest for a night</label>
                         </li>
                         <li>
-                            <input type="radio" name="donation" value="25" id="donate25"> 
-                            <label for="donate10"><strong>$25</strong> -- pays for gas for the truck for a day </label>
+                            <input type="radio" name="amount" value="25.00" id="donate25"> 
+                            <label for="donate25"><strong>$25</strong> -- pays for gas for the truck for a day </label>
                         </li>
                         <li>
-                            <input type="radio" name="donation" value="100" id="donate100"> 
+                            <input type="radio" name="amount" value="100.00" id="donate100"> 
                             <label for="donate100"><strong>$100</strong> -- pays one staff member for a day</label>
                         </li>
                         <li>
-                            <input type="radio" name="donation" value="500" id="donate500"> 
-                            <label for="donate100"><strong>$500</strong> -- pays for laundry for a week</label>
+                            <input type="radio" name="amount" value="500.00" id="donate500"> 
+                            <label for="donate500"><strong>$500</strong> -- pays for laundry for a week</label>
                         </li>
-                        <li>
-                            <input type="radio" name="donation" value="other" id="donateOther"> 
-                            <label for="donate100">$<input type="text" name="other" /> -- one time donation. No strings attached!</label>
-                        </li>
-                        
+                        <!--<li>
+                            <input type="radio" name="amount" value="" id="donateOther"> 
+                            <label for="donate100">$<input type="text" name="other" /> -- one time donation</label>
+                        </li>-->                        
                     </ul>
 
-                    <a href="#" class="donateButton">Donate!</a>
-                </div>
+                    <p>
+                        <input type="checkbox" id="recurring"/> 
+                        <label for="recurring">Make this a recurring monthly donation!</label>
+                    </p>
+
+                    <input type="submit" class="donateButton" value="Donate!"></a>
+
+                    <input type="hidden" name="business" value="boho@bohocommunity.com">
+                    <!-- Specify details about the contribution -->
+                    <input type="hidden" name="currency_code" value="USD">
+
+                    <!-- single donation elements -->
+                    <input class="donation" type="hidden" name="item_name" value="Donation">
+                    <input class="donation" type="hidden" name="item_number" value="Donation">
+                    <input class="donation" type="hidden" name="cmd" value="_donations">
+
+                    <!-- Recurring elements -->
+                    <input class="recurring" type="hidden" name="a3" value="5" id="a3">
+                    <input class="recurring" type="hidden" name="p3" value="1">
+                    <input class="recurring" type="hidden" name="t3" value="M">
+                    <input class="recurring" type="hidden" name="src" value="1">
+                    <input class="recurring" type="hidden" name="sra" value="1">
+                    <input class="recurring" type="hidden" name="cmd" value="_xclick-subscriptions">
+                    <input class="recurring" type="hidden" name="item_name" value="Monthly Donation">
+                    <input class="recurring" type="hidden" name="item_number" value="Monthly Donation">
+                    
+                </form>
             </div>
 
             <!--<div class="block" id="donateBlock">

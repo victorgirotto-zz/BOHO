@@ -84,7 +84,7 @@ p {
 .graph {
     display: inline-block;
     width: 600px;
-    height: 371px;
+    height: 391px;
     background: #EEE;
 }
 
@@ -94,6 +94,8 @@ p {
     background: #F16623;
     color: white;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .donateButton:hover {
