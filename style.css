@@ -59,6 +59,7 @@ p {
     }
 
 #donate {
+    display: none;
     background: #F16623;
     position: fixed;
     width: 100%;
@@ -82,7 +83,7 @@ p {
 
 .graph {
     display: inline-block;
-    width: 667px;
+    width: 600px;
     height: 371px;
     background: #EEE;
 }
@@ -99,10 +100,28 @@ p {
     background: #d1591d;
 }
 
-.actionCall {
+/*.actionCall {
     width: 280px;
     height: 371px;
     float: right;
     text-align: center;
     padding-top: 150px;
+}*/
+
+.actionCall {
+    width: 350px;
+    float: right;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    input[type=text] {
+        width: 40px;
+    }
