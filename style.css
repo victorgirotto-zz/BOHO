@@ -1,0 +1,77 @@
+body {
+    font-family: helvetica;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#container {
+    position: relative;
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.block {
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    position: relative;
+    overflow: auto;
+}
+
+    .testimonial img {
+        position: relative;
+        float: left;
+        width: 20%;
+    }
+
+.quote {
+    display: inline-block;
+    width: 75%;
+    padding: 0 20px;
+}
+
+    .quote q {
+        display: block;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .quote span {
+        display: block;
+    }
+
+#donate {
+    background: #F16623;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+    #donate > div {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+.graph {
+    width: 100%;
+    height: 300px;
+    background: #EEE;
+}
+
+.donateButton {
+
+}
